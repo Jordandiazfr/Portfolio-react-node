@@ -10,9 +10,9 @@ import Introduction from "./Components/Introduction";
 function App() {
   return (
     <>
+      <Header />
       <BrowserRouter>
         {/* Menu */}
-        <Header />
 
         {/*-- Introduction -*/}
         <Introduction />
