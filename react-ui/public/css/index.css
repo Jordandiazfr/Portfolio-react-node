@@ -42,7 +42,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body,
+.root {
   background: var(--clr-light);
   color: var(--clr-dark);
   margin: 0;

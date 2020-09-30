@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function PortfolioItem(props) {
   return (
-    <a href={props.link} className="portfolio__item">
-      <img src={props.src} alt={props.alt} className="portfolio__img"></img>
-    </a>
+    <Link to={props.link} className="portfolio__item">
+      <img src={props.src} className="portfolio__img"></img>
+    </Link>
   );
 }
 
