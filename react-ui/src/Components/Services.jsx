@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Services() {
   return (
     <>
@@ -7,6 +7,7 @@ export default function Services() {
         <h2 className="section__title section__title--services">
           Je sais faire
         </h2>
+        <hr className="hr_after"></hr>
         <div className="services">
           <div className="service">
             <h3>Design + Development</h3>
@@ -40,11 +41,11 @@ export default function Services() {
           </div>
           {/*-- / service -*/}
         </div>
-        {/*-- / services -*/}
-        <a href="#work" className="btn">
-          {" "}
-          My work{" "}
-        </a>
+        <p>
+          <a href="/Work">
+            <button className="btn">En savoir plus!</button>
+          </a>
+        </p>
       </section>
     </>
   );
