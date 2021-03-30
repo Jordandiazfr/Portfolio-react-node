@@ -39,12 +39,6 @@ if (!isDev && cluster.isMaster) {
     );
   });
 
-  app.get("/carte", function (req, res) {
-    response.sendFile(
-      path.resolve(__dirname, "../react-ui/carte", "index.html")
-    );
-  });
-
   app.listen(PORT, function () {
     console.error(
       `Node ${
